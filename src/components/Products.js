@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Products = ({name, imagePath}) => {
+const Products = ({name, imagePath, updateItemCount}) => {
 
 const handle = (event) => {
-  cont
+
+  const currentValue = event.target.value;
+  updateItemCount(name, currentValue);
+  
 }
 
   return (
